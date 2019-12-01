@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>ToDo DEMO - Easy plugin jQuery</title>
+</head>
+<body>
+
+  <!-- Exercice 1
+  <input class="my-input" type="text" placeholder=""> -->
+
+  <!-- Exercice 2
+  <div id="app"></div> -->
+
+  <!-- Exercice 3
+  <div id="search"></div> -->
+
+  <!-- Exercice 4 -->
+  <div id="slideshow"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="lib/todo-easy-plugin.js"></script>-->
+  <script src="lib/form.js"></script>
+  <!--<script src="lib/slider.js"></script>-->
+  <script>
+    // Run the Plugin
+    $(document).ready(function() {
+      /* var myTodo = $('input').MyTodo({
+       'placeholder': 'Enter your tasks'
+      }); */
+
+      /* var myForm = $('#app').MyForm({
+        css: [{
+          padding: 15,
+          fontSize: 13,
+          borderRadius: 5,
+          border: 'none'
+        }],
+        form: [{
+          type: 'text',
+          required: true,
+          options: {
+            'placeholder': 'Nom',
+            validRegex: '[a-zA-A0-9]{3,}',
+            error:  'Erreur',
+          }
+        }, {
+          type: 'text',
+          required: true,
+          options: {
+            'placeholder': 'Prénom',
+            validRegex: '[a-zA-A0-9]{3,}',
+            error:  'Erreur',
+          }
+        }, {
+          type: 'text',
+          required: true,
+          options: {
+            'placeholder': 'Date de naissance',
+            validRegex: '[a-zA-A0-9]{3,}',
+            error:  'Erreur',
+          }
+        }, {
+          currentValue: '',
+          type: 'select',
+          options: [{
+            value: '',
+            name: 'Choisir option',
+          }, {
+            value: 'm',
+            name: 'Homme',
+          }, {
+            value: 'f',
+            name: 'Femme',
+          }]
+        }, {
+          type: 'text',
+          required: false,
+          options: {
+            'placeholder': 'Adresse',
+          }
+        }, {
+          type: 'text',
+          required: false,
+          options: {
+            'placeholder': 'Ville',
+          }
+        }]
+
+      }); */
+
+      /* var mySearch = $('#search').mySearch({}); */
+
+      var mySlider = $('#slideshow').MySlider({
+          'image': [
+            {
+              'id': 0,
+              'link': 'https://vandbfest.fr/wp-content/uploads/2019/04/vladimir-cauchemar-500x500.png',
+              'alternative': '',
+            }, {
+              'id': 1,
+              'link': 'https://vandbfest.fr/wp-content/uploads/2019/04/vladimir-cauchemar-500x500.png',
+              'alternative': '',
+            }, {
+              'id': 2,
+              'link': 'https://vandbfest.fr/wp-content/uploads/2019/04/vladimir-cauchemar-500x500.png',
+              'alternative': '',
+            }, {
+              'id': 3,
+              'link': 'https://vandbfest.fr/wp-content/uploads/2019/04/vladimir-cauchemar-500x500.png',
+              'alternative': '',
+            }
+          ]
+      });
+    });
+  </script>
+</body>
+</html>
